@@ -1,12 +1,12 @@
 # Distribution-Class
-This is the class that helped me make the customizable distributions in "the most random battle" (part 1)
+This is the class that helped me make the customizable distributions in "the most random battle" (part 1) 
 
 to use the class, first make 2 lists of equal counts (things will probobly break otherwise). Populate your first list with items you want in the distribution, and then populate the second list with floats of the probability of getting the corresponding item. 
 
 For example:
 if I want a sword to drop 20% of the time, then
 _items[0] = sword;
-_dropChance[0] = .2;
+_dropChance[0] = .2f;
 
 Next make a new distribution and pass in your two lists as arguments.
 Distribution<Item> _distribution = new Distribution<Item>(_items, _dropChance);
